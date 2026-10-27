@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Remove .html from the URL bar if a user types it in
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 2. Internally map the clean URL back to the .html file so it loads
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

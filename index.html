@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gaianova Multi Service Limited</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font similar to your logo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+
+    <div id="preloader">
+
+        <img src="assets/preloader.gif" preload="auto" alt="Renewable Energy Solar" width="200px" height="250px">
+
+        <div class="loader-wrapper">
+            <div class="loader-bar"></div>
+        </div>
+
+    </div>
+
+    <!-- ================= MAIN WEBSITE ================= -->
+
+    <div id="main-content">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="logo-area">
+                <img src="assets/logo.png" alt="Gaianova Logo">
+            </div>
+
+            <!-- Hamburger (visible only on mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation (hidden on mobile until toggled) -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="/products" class="nav-link">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li><a href="/products#quote" class="nav-btn">Get a Quote</a></li>
+                    <!-- Mobile-only theme toggle (inside the menu) -->
+                    <li class="mobile-theme-toggle-item">
+                        <button id="theme-toggle-mobile" class="theme-toggle-mobile-btn" aria-label="Toggle theme">
+                            <img src="assets/moon-green.png" alt="Toggle Theme" class="toggle-icon-mobile">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Desktop theme toggle (stays on the right) -->
+            <button id="theme-toggle" aria-label="Toggle theme"></button>
+
+        </header>
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('assets/heroimg3.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/heroimg5.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/heroimg.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/heroimg4.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/heroimg6.jpg');"></div>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content" data-aos="fade-up">
+
+                <h1>
+                    Driving Sustainable Technology For The Future
+                </h1>
+
+                <p>
+                    Advanced aviation solutions, renewable energy systems,
+                    aircraft engineering, electric mobility and next-generation
+                    clean technology.
+                </p>
+
+                <a href="#services" class="hero-btn">
+                    Explore Services
+                </a>
+
+
+                <a href="products.html#quote" class="hero-btn1">
+                    Get a Quote
+                </a>
+
+
+            </div>
+
+            <!-- Slide Indicators -->
+            <div class="slide-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about section" id="about">
+
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>About Gaianova</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text" data-aos="fade-right">
+
+                        <p>
+                            Gaianova Multi Service Limited is a modern technology,
+                            aviation and renewable energy company focused on creating
+                            sustainable engineering solutions for Africa and beyond.
+                        </p>
+
+                        <p>
+                            We specialize in aviation consulting, air worthiness management, aviation software management,
+                            electric mobility systems, wind energy, charging stations and smart energy infrastructure.
+                        </p>
+
+                    </div>
+
+                    <div class="about-card" data-aos="zoom-in">
+
+                        <h3>Core Industries</h3>
+
+                        <ul>
+                            <li>Renewable Energy</li>
+                            <li>Aviation Engineering</li>
+                            <li>Aircraft Maintenance</li>
+                            <li>Electric Vehicles</li>
+                            <li>Wind Turbines</li>
+                            <li>Charging Stations</li>
+                            <li>Engine Overhaul</li>
+                            <li>C-Check Scheduling</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+
+        <section class="services section" id="services">
+
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Our Services</h2>
+                </div>
+
+                <div class="service-grid">
+
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-img-wrapper">
+                            <img src='assets/aviatmaint.jpg' alt="Aviation Maintenance" class="service-img"
+                                loading="lazy">
+                        </div>
+                        <h3>Aviation Consulting</h3>
+                        <p>
+                            Continuing airworthiness management, aviation software data migration, aircraft pre purchase
+                            inspections and documentation review, maintenance operations set up.
+                        </p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-img-wrapper">
+                            <img src="assets/renewen.jpg" alt="Renewable Energy Solar" class="service-img"
+                                loading="lazy">
+                        </div>
+                        <h3>Renewable Energy</h3>
+                        <p>
+                            Solar systems, wind turbine integration and sustainable power solutions.
+                        </p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-img-wrapper">
+                            <img src="assets/electricvh.avif" alt="Electric Mobility" class="service-img"
+                                loading="lazy">
+                        </div>
+                        <h3>Electric Mobility</h3>
+                        <p>
+                            EV charging stations and electric vehicle infrastructure deployment.
+                        </p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-img-wrapper">
+                            <img src="assets/flightmanag.jpg" alt="Aircraft Management" class="service-img"
+                                loading="lazy">
+                        </div>
+                        <h3>Aircraft Management</h3>
+                        <p>
+                            Weight and balance analysis, maintenance, production and material planning, stores and part
+                            repair management and fleet support.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMPACT SECTION -->
+        <section class="impact-section section" id="impact">
+
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Gaianova's Renewable Energy Impact</h2>
+                    <p>Delivering sustainable aviation, solar energy and engineering solutions that create measurable
+                        value.</p>
+                </div>
+
+                <div class="impact-scroll-wrapper">
+
+                    <!-- Mobile swipe hint -->
+                    <div class="scroll-indicator">
+                        <span>⇆ Swipe</span>
+                    </div>
+
+                    <div class="impact-container">
+
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="counter" data-target="400">0</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+                            <h3><span class="counter" data-target="210">0</span><span>MWh</span></h3>
+                            <p>Solar Energy Generated</p>
+                        </div>
+
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="counter" data-target="3000">0</h3>
+                            <p>Metric Tons Carbon Avoided</p>
+                        </div>
+
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+                            <h3><span class="counter" data-target="292">0</span><span>M+</span></h3>
+                            <p>Naira Saved</p>
+                        </div>
+
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="counter" data-target="200000">0</h3>
+                            <p>Liters Fossil Fuel Replaced</p>
+                        </div>
+                        <div class="impact-card" data-aos="fade-up" data-aos-delay="600">
+                            <h3 class="counter" data-target="3500">0</h3>
+                            <p>Homes Powered by Solar</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TEAM -->
+
+        <section class="team section">
+
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Leadership Team</h2>
+                </div>
+
+                <div class="team-grid">
+
+                    <!-- CEO -->
+
+                    <div class="team-card" data-aos="fade-right">
+
+                        <img src="assets/CEO.jpg" alt="CEO">
+
+                        <h3>Stanley Chukwunonso Igbokwe</h3>
+
+                        <span>Chief Executive Officer</span>
+
+                        <p>
+                            Visionary leader driving innovation across aviation engineering,
+                            renewable energy and future-focused infrastructure development.
+                        </p>
+
+                    </div>
+
+                    <!-- MEMBER -->
+
+                    <div class="team-card" data-aos="fade-left">
+
+                        <img src="assets/patex.jpg" alt="Team Member">
+
+                        <h3>Patrick Chiemerie</h3>
+
+                        <span>Engineering Division</span>
+
+                        <p>
+                            Managing aircraft systems, technical compliance,
+                            engine diagnostics and operational maintenance.
+                        </p>
+
+                    </div>
+                    
+                    <!-- hr -->
+                        <div class="team-card" data-aos="fade-right">
+
+                        <img src="assets/jane.jpg" alt="CEO">
+
+                        <h3>Ijeoma Jane Uzoigwe</h3>
+
+                        <span>Human Relation (HR)</span>
+
+                        <p>
+                            People-focused leader nurturing the talent and collaboration that power our work in aviation and renewable energy
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Contact Us</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card" data-aos="fade-right">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-detail">
+                                <h4>Our Address</h4>
+                                <p>No. 5 Anthony Obe Street, Beesam Bus-Stop, Ikeja Lagos State</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-detail">
+                                <h4>Email Us</h4>
+                                <p>gaianovatech@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-detail">
+                                <h4>Call & Whatsapp Us</h4>
+                                <p>+2347074489732</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                    
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon">📤</span>
+                            </button>
+                        </form>
+                    
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                        </div>
+                    
+                        <!-- Error Message -->
+                        <div class="form-error" id="formError" style="display: none;">
+                            <div class="error-icon">❌</div>
+                            <h3>Oops!</h3>
+                            <p>Something went wrong. Please try again later.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer-section" data-aos="fade-up">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <p>Copyright ©️ Gaianova 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="js/preload.js"></script>
+    <script src="js/main.js"></script>
+    <!-- AJAX Script for form submission -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Hide any previous messages
+    document.getElementById('formSuccess').style.display = 'none';
+    document.getElementById('formError').style.display = 'none';
+    
+    // Get form data
+    const formData = new FormData(this);
+    
+    // Disable submit button to prevent double submission
+    const submitBtn = this.querySelector('.submit-btn');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="btn-text">Sending...</span><span class="btn-icon">⏳</span>';
+    
+    try {
+        const response = await fetch('send-mail.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (result.status === 'success') {
+            document.getElementById('formSuccess').style.display = 'block';
+            this.reset(); // Clear form
+        } else {
+            document.getElementById('formError').style.display = 'block';
+            // Optional: show specific error message
+            const errorMsg = document.querySelector('#formError p');
+            if (result.message) errorMsg.textContent = result.message;
+        }
+    } catch (error) {
+        document.getElementById('formError').style.display = 'block';
+    } finally {
+        // Re-enable button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        
+        // Auto-hide messages after 5 seconds
+        setTimeout(() => {
+            document.getElementById('formSuccess').style.display = 'none';
+            document.getElementById('formError').style.display = 'none';
+        }, 5000);
+    }
+});
+</script>
+
+</body>
+
+</html>
